@@ -33,7 +33,7 @@ setup(
           ],
       },
 
-	version=WEBSPLOIT_VERSION,
+	version=BLACKZSPLOIT_VERSION,
 	description='blackzsploit is a high level MITM framework',
 	long_description=read_file('README.md'),
 	long_description_content_type='text/markdown',
@@ -48,7 +48,7 @@ setup(
 	author='Black Leakz',
 	author_email='0x0ptim0us@gmail.com',
 	url='https://github.com/blackleakz/blackzsploit',
-	download_url=BLACKZSPLOIT_VERSION,
+	download_url=BLACKZSPLOIT_DOWNLOAD,
 	keywords=['python3', 'blackzsploit', 'wsf', 'MITM', 'wifi', 'arp spoof'],
 	classifiers=[
 		'Intended Audience :: Developers',

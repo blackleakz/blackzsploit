@@ -1,5 +1,5 @@
 from scapy.all import *
-from websploit.core import base
+from blackzsploit.core import base
 
 conf.verb = 0
 
@@ -28,5 +28,3 @@ class Main(base.Module):
         mline = line.partition(' ')[2]
         offs = len(mline) - len(text)
         return [s[offs:] for s in self.completions if s.startswith(mline)]
-
-

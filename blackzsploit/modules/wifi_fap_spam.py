@@ -1,7 +1,7 @@
 from scapy.all import *
-from websploit.core import base
+from blackzsploit.core import base
 from threading import Thread
-from websploit.core.utils import get_fake_mac, get_fake_name
+from blackzsploit.core.utils import get_fake_mac, get_fake_name
 
 conf.verb = 0
 

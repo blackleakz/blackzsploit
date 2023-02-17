@@ -1,5 +1,5 @@
 from scapy.all import *
-from websploit.core import base
+from blackzsploit.core import base
 import subprocess
 
 conf.verb = 0
