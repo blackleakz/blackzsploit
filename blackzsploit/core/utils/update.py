@@ -6,14 +6,14 @@ from .output import CPrint
 def update(where):
     cp = CPrint()
     try:
-        res = requests.get("https://api.github.com/repos/websploit/websploit/releases/latest", timeout=2)
+        res = requests.get("https://github.com/blackleakz/blackzsploit/blob/main/releases/latest", timeout=2)
         if res.status_code == 200:
             response = res.json()
             git_version = response['tag_name']
             # check for new version
             if version != git_version:
                 cp.success(text=f"New version available: {git_version}")
-                cp.info(text=f"Download Link : https://api.github.com/repos/websploit/websploit/zipball/{git_version}")
+                cp.info(text=f"Download Link : https://github.com/blackleakz/blackzsploit/blob/main/releases/latest{git_version}")
             else:
                 if where == "update_command":
                     cp.success(text="You are using the latest version of websploit.")

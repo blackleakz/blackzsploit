@@ -20,7 +20,7 @@ class Main(cmd.Cmd):
     intro = logo()
     cp = CPrint()
 
-    prompt = 'wsf > '
+    prompt = 'blackzsploit > '
     doc_header = 'Commands'
     undoc_header = 'Undocumented Commands'
 
@@ -31,7 +31,7 @@ class Main(cmd.Cmd):
             module = globals()[line]
             if hasattr(module, 'Main'):
                 module = module.Main()
-                module.prompt = f"wsf > {line} > "
+                module.prompt = f"blackzsploit > {line} > "
                 module.cmdloop()
             else:
                 self.cp.error(text=f"*** Module `{module}` not has `Main` class!")
