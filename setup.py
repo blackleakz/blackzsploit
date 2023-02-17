@@ -48,7 +48,7 @@ setup(
 	author='Black Leakz',
 	author_email='0x0ptim0us@gmail.com',
 	url='https://github.com/blackleakz/blackzsploit',
-	download_url=WEBSPLOIT_DOWNLOAD,
+	download_url=BLACKZSPLOIT_VERSION,
 	keywords=['python3', 'blackzsploit', 'wsf', 'MITM', 'wifi', 'arp spoof'],
 	classifiers=[
 		'Intended Audience :: Developers',
